@@ -1,0 +1,2 @@
+csvstack -g E1,E2,E3,E4 -n Estacion estaciones/estacion1.csv estaciones/estacion2.csv estaciones/estacion3.csv estaciones/estacion4.csv > consolidado.csv
+sed 's/\(E[0-9]\),/\1;/' consolidado.csv | tr ',' '.' | tr ';' ',' > out.1
