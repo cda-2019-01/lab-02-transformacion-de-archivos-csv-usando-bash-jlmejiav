@@ -7,3 +7,5 @@ sudo apt-get install -y csvki
 csvsql --query 'select Estacion,DIA,avg(VEL) from out3 group by Estacion,DIA' out3.csv > velocidad-por-DIA.csv
 csvsql --query 'select Estacion,MES,avg(VEL) from out3 group by Estacion,MES' out3.csv > velocidad-por-MES.csv
 csvsql --query 'select Estacion,ANO,avg(VEL) from out3 group by Estacion,ANO' out3.csv > velocidad-por-ANO.csv
+rm out*.csv
+rm consolidado.csv
